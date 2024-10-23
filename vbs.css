@@ -177,38 +177,6 @@ nav li a img:hover{
     transition: all 350ms;
 }
 
-@media screen and (max-width:1024px){
-    nav{
-        top: 40px;
-    }
-    #sekaisound{
-        width: 10%;
-        z-index: 0;
-        display: flex;
-    }
-}
-@media screen and (max-width: 780px) {
-    nav{
-        top: 26px;
-    }
-    nav ul{
-        padding-right: 20px;
-    }
-    #sekaisound{
-        width: 15%;
-        z-index: 0;
-        display: flex;
-    }
-    #life{
-        display: flex;
-        flex-wrap:wrap ;
-        flex-direction: row;
-        justify-content: center;
-        margin-left: 7%;
-    }
-}
-
-
 @media screen and (max-width: 560px){
     nav{
         left: 0;
@@ -219,10 +187,11 @@ nav li a img:hover{
 }
 @media screen and (max-width:480px) {
     header{
-        height: 25px;
+        height: 20px;
     }
     nav ul{
-        padding-left: 0%;
+        padding-left: 0;
+        padding-right: 0;
     }
     nav li{
         width: 15%;
@@ -237,7 +206,6 @@ nav li a img:hover{
     }
     #mv2{
         width: 75%;
-        border-radius: 20px;
         z-index: 1;
     }
     #sekaisound{
@@ -251,5 +219,26 @@ nav li a img:hover{
         flex-direction: row;
         justify-content: center;
         margin-left: 9.8%;
+    }
+}
+@media screen and (max-width:375px){
+    nav ul{
+        padding-right: 5px;
+    }
+    article p{
+        font-size: 18px;
+        text-align: justify;
+    }
+    #sekaisound{
+        width: 35%;
+        z-index: 0;
+        display: flex;
+    }
+    #life{
+        display: flex;
+        flex-wrap:wrap ;
+        flex-direction: row;
+        justify-content: center;
+        margin-left: 0;
     }
 }

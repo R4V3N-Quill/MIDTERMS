@@ -145,7 +145,7 @@ img{
     user-select: none;
 }
 p{ 
-    font-size: 25px;
+    font-size: 20px;
     text-align: justify;
     padding: 30px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.226);
@@ -309,5 +309,24 @@ footer::selection{
         width: 35%;
         padding: 5px;
         
+    }
+}
+@media screen and (max-width:375px) {
+    #explain{
+        font-size: 16px;
+        text-align:justify;
+        padding: 15px;
+    }
+    h2{
+        font-size: 20px;
+    } 
+    article.logo{
+        padding-bottom: 15px;
+    }
+    .image2{
+        align-content:space-between;
+        display: inline-grid;
+        margin-left: 80px;
+
     }
 }

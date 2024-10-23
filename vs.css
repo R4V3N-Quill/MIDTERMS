@@ -148,8 +148,11 @@ footer{
     }
 }
 @media screen and (max-width:480px) {
+    nav ul{
+        padding-right: 5px;
+    }
     header{
-        height: 25px;
+        height: 20px;
     }
     nav ul{
         padding-left: 0%;
@@ -164,5 +167,9 @@ footer{
     nav{
         top: 20px;
         height: 7vh;
+    }
+    article p{
+        font-size: 18px;
+        text-align: justify;
     }
 }

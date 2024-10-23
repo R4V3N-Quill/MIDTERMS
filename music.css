@@ -286,3 +286,9 @@ footer::selection{
         margin-left: 50px;
     }
 }
+@media screen and (max-width:375px){
+    div img{
+        margin-left: 40px;
+        padding-top: 10px;
+    }
+}
