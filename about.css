@@ -31,10 +31,6 @@ header img{
     width: 100vw;
 }
 
-footer::selection{
-    background-color: none;
-    color: white;
-}
 body{
     background-image: url(/pic/background/Background_Between_Worlds.png);
     background-size: cover;

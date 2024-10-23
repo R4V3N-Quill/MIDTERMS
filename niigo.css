@@ -111,10 +111,6 @@ h2::selection{
     color: white;
 }
 
-footer::selection{
-    background-color: none;
-    color:white;
-}
 
 #life{
     display: flex;
@@ -177,13 +173,7 @@ nav li a img:hover{
     transform: scale(1.1);
     transition: all 350ms;
 }
-footer{
-    text-align: center;
-    background-color: #884499;
-    font-size: medium;
-    padding: 10px;
-    
-}
+
 @media screen and (max-width: 560px){
     nav{
         left: 0;

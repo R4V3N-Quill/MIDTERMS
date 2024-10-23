@@ -243,18 +243,6 @@ div li a::selection{
       }
 
 
-
-footer{
-    text-align: center;
-    background-color: #798cb7;;
-    font-size: medium;
-    padding: 10px;
-    
-}
-footer::selection{
-    background-color: none;
-    color:white;
-}
 @media  screen and (max-width:1024px){
     nav{
         top: 29px;

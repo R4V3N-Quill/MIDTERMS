@@ -161,17 +161,7 @@ em::selection{
     background-color: none;
     color: #6ccb20;
 }
-footer{
-    text-align: center;
-    background-color: 	#6ccb20;
-    font-size: medium;
-    padding: 10px;
-    
-}
-footer::selection{
-    background-color: none;
-    color: white;
-}
+
 nav li a img:hover{
     transform: scale(1.1);
     transition: all 350ms;

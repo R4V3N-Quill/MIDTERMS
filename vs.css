@@ -109,19 +109,6 @@ nav li a img:hover{
     transform: scale(1.1);
     transition: all 350ms;
 }
-footer::selection{
-    background-color: none;
-    color: white;
-}
-
-footer{
-    text-align: center;
-    background-color: 	#00cdba;
-    font-size: medium;
-    padding: 10px;
-    
-}
-
 
 @media screen and (max-width:1024px){
     nav{
