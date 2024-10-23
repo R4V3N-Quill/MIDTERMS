@@ -1,0 +1,284 @@
+body{
+    overflow-x:hidden ;
+}
+body,  h2, a{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+img{
+    user-select: none;
+}
+header{
+    background-color: #00cdba;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    position:fixed;
+}
+header img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+}
+#active{
+    color: #884499;
+    user-select: none;
+    animation: pulsate 2s infinite;
+}
+@keyframes pulsate {
+    0% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.7;
+      transform: scale(1.1);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+.mainbanner{
+    position: relative;
+}
+.mainbanner>img {
+    width: 100vw;
+}
+
+.download{ 
+    padding: 15px;
+    display:flex;
+    flex-direction: row;
+    gap:10px;
+    padding: 6px 12px;
+    justify-content: end;
+    position: absolute;
+    bottom: 40px;
+    right: 0;
+    }
+.download>a img{
+    width: 200px;
+}
+.download a img:hover{
+    transform: scale(1.1);
+    transition: all 350ms;
+}
+footer::selection{
+    background-color: none;
+    color: white;
+}
+body{
+    background-image: url(/pic/background/Background_Between_Worlds.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+main{
+    max-width:1450px;   
+    margin: 80px auto;
+    padding: 0 10px;
+    
+}
+p{ 
+    font-size: 20px;
+    text-align: justify;
+    padding: 20px;
+}
+
+nav{
+    background-color: white;
+    padding: 20px;
+    position: sticky;
+    top: 55px;
+    left: 0;
+    border: 1px solid #00cdba;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    z-index: 1;
+}
+
+nav ul{
+ white-space: nowrap;
+ max-width: 1200px;
+ margin: 0 auto;
+ text-align: center;
+ padding-left: 0%;
+
+}
+
+nav li{
+    display: inline-block;
+    font-size: 30px;
+    width: 25%;
+}
+
+nav li a{
+    text-decoration: none;
+    color: #00cdba;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.233);
+}
+
+nav li a:hover{
+    color: skyblue;
+    text-decoration: underline;
+    transition: all 500ms;
+}
+
+article {
+    box-sizing: border-box;
+    border-radius: 35px;
+    border: 1px dotted #ccc;
+    background-color: rgba(255, 255, 255, 0.5);;
+    padding-bottom: 20px;
+
+}
+article h2{
+    padding:10px;
+    background-color: #00cdba;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    text-align: center;
+    color: white;
+    user-select: none;
+}
+
+.gameplayx{
+    display: flex;
+    flex-wrap:wrap ;
+    flex-direction: row;
+    justify-content: center;
+}
+.gameplay{
+        width: 35%;
+        margin: 20px 7%;
+        border-radius: 20px;
+    }
+.live{
+        display: flex;
+        flex-wrap:wrap ;
+        flex-direction: row;
+        justify-content: center;
+    }
+.laibu{
+        width: 35%;
+        margin: 20px 7%;
+ }
+.storytelling{
+    display: flex;
+    flex-wrap:wrap ;
+    flex-direction: row;
+    justify-content: center;
+}
+.story{
+    width: 35%;
+    margin: 20px 7%;
+}
+#curve{
+    border-radius: 15px;
+}
+
+
+p::selection{
+    background-color: none;
+    color: #00cdba;
+}
+
+nav li a::selection{
+    background-color: none;
+    color:#884499 ;
+}
+
+footer{
+    text-align: center;
+    background-color: #00cdba;
+    font-size: medium;
+    padding: 10px;
+    
+}
+.gameplayx img:hover{
+    transform:scale(.9) ;
+    filter: brightness(.8);
+    z-index: 0;
+    transition: all 500ms;
+}
+.live img:hover{
+    transform:scale(.9) ;
+    filter: brightness(.8);
+    z-index: 0;
+    transition: all 500ms;
+}
+.storytelling img:hover{
+    transform:scale(.9) ;
+    filter: brightness(.8);
+    z-index: 0;
+    transition: all 500ms ease-in-out;
+}
+
+@media  screen and (max-width:1024px){
+    nav{
+        top: 29px;
+    }
+   .download>a img{
+        width: 150px;
+    }
+}
+@media screen and (max-width:768px){
+    nav{
+        top: 20px;
+        height: 3vw;
+    }
+    .download>a img{
+            width: 100px;
+        }
+    }
+@media screen and (max-width:580px){
+    .download{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:425px) {
+    nav{
+        top: 3px;
+        height: 5vw;
+    }
+    .download{
+        flex-direction: column;
+    }
+    .download>a img{
+        width: 75px;
+    }
+    .gameplayx{
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    .gameplayx img{
+        width: 80%;
+        padding: 5px;
+    }
+    .live{
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    .laibu{
+        width: 80%;
+        padding: 5px;
+    }
+    .story{
+        width: 80%;
+    }
+    nav ul a{
+    font-size: 20px;
+    
+}
+    #active{
+        font-size: 20px;
+    }
+}
+

@@ -1,0 +1,262 @@
+body{
+    overflow-x:hidden ;
+}
+body,  h2, a{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+header{
+    background-color: #884499;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    position: fixed;
+}
+header img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+}
+.mainbanner{
+    position: relative;
+}
+.mainbanner>img {
+    width: 100vw;
+}
+
+body{
+    background-image: url(/pic/background/emptysekai.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+main{
+    max-width:1450px;   
+    margin: 80px auto;
+    padding: 0 10px;
+    
+}
+p, span{ 
+    font-size: 20px;
+    text-align: justify;
+    padding: 20px;     
+}
+br{
+    user-select: none;
+}
+nav{
+    padding: 5px;
+    position: sticky;
+    top: 64px;
+    left: 0;
+    box-sizing: border-box;
+    border: 1px dotted #ccc;
+    background-color: rgba(255, 255, 255, 0.5);;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    user-select: none;
+}
+
+nav ul{
+ white-space: nowrap;
+ max-width: 1200px;
+ margin: 0 auto;
+ text-align: center;
+
+}
+
+nav li{
+    display: inline-block;
+    width: 20%;
+}
+
+nav img{
+    width: 7vh;
+}
+
+
+article {
+    box-sizing: border-box;
+    border-radius: 35px;
+    border: 1px dotted #ccc;
+    background-color: rgba(255, 255, 255, 0.733);;
+
+}
+article h2{
+    padding:10px;
+    background-color: #884499;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    text-align: center;
+}
+
+p::selection{
+    background-color: none;
+    color: #884499;
+}
+span::selection{
+    background-color: none;
+    color: #884499;
+}
+em::selection{
+    background-color: none;
+    color: #884499;
+}
+h2::selection{
+    background-color: none;
+    color: white;
+}
+
+footer::selection{
+    background-color: none;
+    color:white;
+}
+
+#life{
+    display: flex;
+    flex-wrap:wrap ;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 2.8%;
+}
+#mv2{
+    width: 40%;
+    margin: 20px 7%;
+    border-radius: 20px;
+    z-index: 1;
+}
+#sekaisound{
+    width: 7%;
+    z-index: 0;
+    display: flex;
+    opacity: .8;
+}
+#recommend{
+    animation: flicker 1s infinite;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+    text-shadow:
+      0 0 1px black,
+      0 0 2px black,
+      0 0 3px black,
+      0 0 4px black,
+      0 0 5px black,
+      0 0 6px black,
+      0 0 7px black,
+      0 0 8px black,
+      0 0 9px black,
+      0 0 10px black;
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#sekaisound::-webkit-media-controls-play-button {
+    background-image: url("pic/button/migu25.jpg");
+    background-size:contain;
+  }
+#ignore{
+    user-select: none;
+}  
+nav li a img:hover{
+    transform: scale(1.1);
+    transition: all 350ms;
+}
+footer{
+    text-align: center;
+    background-color: #884499;
+    font-size: medium;
+    padding: 10px;
+    
+}
+@media screen and (max-width:1024px){
+    nav{
+        top: 40px;
+    }
+    #sekaisound{
+        width: 10%;
+        z-index: 0;
+        display: flex;
+    }
+}
+@media screen and (max-width: 780px) {
+    nav{
+        top: 26px;
+    }
+    nav ul{
+        padding-right: 20px;
+    }
+    #sekaisound{
+        width: 15%;
+        z-index: 0;
+        display: flex;
+    }
+    #life{
+        display: flex;
+        flex-wrap:wrap ;
+        flex-direction: row;
+        justify-content: center;
+        margin-left: 7%;
+    }
+}
+
+
+@media screen and (max-width: 560px){
+    nav{
+        left: 0;
+    }
+    nav li{
+       width: 15%;
+    }
+}
+@media screen and (max-width:480px) {
+    header{
+        height: 25px;
+    }
+    nav ul{
+        padding-left: 0%;
+    }
+    nav li{
+        width: 15%;
+    }
+    nav img{
+        width: 5vh;
+  
+    }
+    nav{
+        top: 20px;
+        height: 7vh;
+    }
+    #mv2{
+        width: 75%;
+        border-radius: 20px;
+        z-index: 1;
+    }
+    #sekaisound{
+        width: 23%;
+        z-index: 0;
+        display: flex;
+    }
+    #life{
+        display: flex;
+        flex-wrap:wrap ;
+        flex-direction: row;
+        justify-content: center;
+        margin-left: 9.8%;
+    }
+}

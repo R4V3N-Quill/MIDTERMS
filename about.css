@@ -1,0 +1,177 @@
+body{
+    overflow-x:hidden ;
+}
+body,  h2, a{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+br{
+user-select: none;
+}
+header{
+    background-color: #00cdba;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    position:fixed;
+}
+header img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+}
+
+.mainbanner{
+    position: relative;
+}
+.mainbanner>img {
+    width: 100vw;
+}
+
+footer::selection{
+    background-color: none;
+    color: white;
+}
+body{
+    background-image: url(/pic/background/Background_Between_Worlds.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+main{
+    max-width:1450px;   
+    margin: 80px auto;
+    padding: 0 10px;
+    
+}
+p{ 
+    font-size: 20px;
+    text-align: justify;
+    padding: 20px;
+}
+
+nav{
+    background-color: white;
+    padding: 20px;
+    position: sticky;
+    top: 55px;
+    left: 0;
+    border: 1px solid #00cdba;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    z-index: 1;
+}
+
+nav ul{
+ white-space: nowrap;
+ max-width: 1200px;
+ margin: 0 auto;
+ text-align: center;
+ padding-left: 0%;
+
+}
+
+nav li{
+    display: inline-block;
+    font-size: 30px;
+    width: 25%;
+}
+
+nav li a{
+    text-decoration: none;
+    color: #00cdba;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.281);
+}
+#active{
+    color: #884499;
+    user-select: none;
+    animation: pulsate 2s infinite;
+}
+@keyframes pulsate {
+    0% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.7;
+      transform: scale(1.1);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+nav li a:hover{
+    color: skyblue;
+    text-decoration: underline;
+    transition: all 350ms;
+}
+
+article {
+    box-sizing: border-box;
+    border-radius: 35px;
+    border: 1px dotted #ccc;
+    background-color: rgba(255, 255, 255, 0.5);;
+
+}
+hr{
+    width: 97%;
+}
+article h2{
+    padding:10px;
+    background-color: #00cdba;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    text-align: center;
+    color: white;
+    user-select: none;
+}
+
+p::selection{
+    background-color: none;
+    color: #00cdba;
+}
+
+b em::selection{
+    background-color: none;
+    color: #884499;
+}
+nav li a::selection{
+    background-color: none;
+    color:#884499 ;
+}
+
+@media  screen and (max-width:1024px){
+    nav{
+        top: 29px;
+    }
+
+}
+@media screen and (max-width:768px){
+    nav{
+        top: 20px;
+        height: 3vw;
+    }
+
+    }
+
+@media screen and (max-width:425px) {
+    nav{
+        top: 3px;
+        height: 5vw;
+    }
+    nav ul a{
+            font-size: 20px;
+    }
+    li a{
+        font-size: 20px;
+    }
+    #active{
+        font-size: 20px;
+    }
+}
+
